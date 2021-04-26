@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UESPI-SISU</title>
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script src="lib/jquery-3.3.1.min.js"></script>
+	<script src="lib/scripts.js"></script>
+</head>
+
+<body>
+	<div class="barraTop">&nbsp;</div>
+	<div class="container page">
+		<div class="row barraSuperior">
+			<div class="col-xs-1">
+				<img src="imagens/uespi.png" class="uespiLogo">
+			</div>
+			<div class="col-xs-11" style="text-align: right;"><p></p>
+				<span class="uespiTexto">UNIVERSIDADE ESTADUAL DO PIAUÍ</span><br>
+				<span class="subtitulo">Matrícula Institucional <strong>SiSU 2019</strong></span>
+				<!-- <img src="imagens/sisu.png" class="sisuLogo"> -->
+			</div>
+		</div>
+		<div class="row">
+			<div class="senhaAtual">
+				<div class="row">
+					<div class="col-xs-5 col-xs-offset-1" style="text-align: right;"><br><br>
+						<span class="senhaAtualTexto">SENHA &nbsp;</span>
+					</div>
+					<div class="col-xs-5"  style="text-align: left;">
+						<span id="senhaAtualNumero">0000</span>
+					</div>
+					<input type="hidden" id="senhaNormal" value="0000">
+					<input type="hidden" id="senhaPrioridade" value="P000">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-4 col-xs-offset-4 ultimaSenha">
+				<br>
+				<span id="ultimaSenhaTexto">ÚLTIMA CHAMADA</span><br>
+				<span>Senha </span>
+				<span id="ultimaSenhaNumero">0000</span>
+			</div>
+		</div>
+	</div>
+	<audio id="audioChamada" src="audio/chamada.wav"></audio>
+</body>
+</html>
